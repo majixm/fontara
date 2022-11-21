@@ -282,8 +282,7 @@
     },
     {
       "matches": [
-        "https://*.google.*/*",
-      ],
+        "https://*.google.*/*"],
       "js": [
         "inject/google/script/contentscript.js",
         "inject/google/script/google.js"
