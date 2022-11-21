@@ -50,7 +50,7 @@
         "https://github.com/*",
         "https://www.wunderlist.com/*",
         "https://messages.android.com/*",
-        "https://*.google.*/*",
+        "https://*.google.*/*"
       ],
       "js": [
         "inject/global/script/contentscript.js",
