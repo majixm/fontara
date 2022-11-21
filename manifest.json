@@ -22,9 +22,7 @@
     {
       "matches": ["<all_urls>"],
       "exclude_matches": [
-        "https://twitter.com/*",
-        "https://tweetdeck.twitter.com/*",
-        "https://mobile.twitter.com/*",
+        "https://*.twitter.com/*",
         "https://www.linkedin.com/*",
         "https://www.instagram.com/*",
         "https://www.facebook.com/*",
@@ -41,9 +39,6 @@
         "https://paper.dropbox.com/*",
         "https://virgool.io/*",
         "https://duckduckgo.com/*",
-        "https://keep.google.com/*",
-        "https://translate.google.com/*",
-        "https://calendar.google.com/*",
         "*://fa.wordpress.org/*",
         "*://wp-persian.com/*",
         "*://*.blogspot.com/*",
@@ -52,9 +47,7 @@
         "https://www.youtube.com/*",
         "https://www.goodreads.com/*",
         "https://mail.google.com/*",
-        "https://inbox.google.com/*",
         "https://hangouts.google.com/*",
-        "https://tasks.google.com/*",
         "https://github.com/*",
         "https://www.wunderlist.com/*",
         "https://messages.android.com/*",
@@ -255,7 +248,7 @@
       "all_frames": true
     },
     {
-      "matches": ["https://twitter.com/*"],
+      "matches": ["https://*.twitter.com/*"],
       "js": ["inject/twitter/script/contentscript.js"],
       "css": ["inject/twitter/style/twitter.css"],
       "run_at": "document_start",
@@ -265,20 +258,6 @@
       "matches": ["https://*.twimg.com/*"],
       "js": ["inject/twitter/script/contentscript.js"],
       "css": ["inject/twitter/style/twitter.css"],
-      "run_at": "document_start",
-      "all_frames": true
-    },
-    {
-      "matches": ["https://tweetdeck.twitter.com/*"],
-      "js": ["inject/twitter/script/contentscript.js"],
-      "css": ["inject/twitter/style/tweetdeck.css"],
-      "run_at": "document_start",
-      "all_frames": true
-    },
-    {
-      "matches": ["https://mobile.twitter.com/*"],
-      "js": ["inject/twitter/script/contentscript.js"],
-      "css": ["inject/twitter/style/twittermobile.css"],
       "run_at": "document_start",
       "all_frames": true
     },
@@ -408,27 +387,6 @@
       "all_frames": true
     },
     {
-      "matches": ["https://keep.google.com/*"],
-      "js": ["inject/google/script/contentscript.js"],
-      "css": ["inject/google/style/keepgoogle.css"],
-      "run_at": "document_end",
-      "all_frames": true
-    },
-    {
-      "matches": ["https://translate.google.com/*"],
-      "js": ["inject/google/script/contentscript.js"],
-      "css": ["inject/google/style/translate.css"],
-      "run_at": "document_end",
-      "all_frames": true
-    },
-    {
-      "matches": ["https://calendar.google.com/*"],
-      "js": ["inject/google/script/contentscript.js"],
-      "css": ["inject/google/style/calendar.css"],
-      "run_at": "document_end",
-      "all_frames": true
-    },
-    {
       "matches": ["*://fa.wordpress.org/*", "*://wp-persian.com/*"],
       "js": ["inject/wordpress/script/contentscript.js"],
       "css": ["inject/wordpress/style/wordpress.css"],
@@ -481,13 +439,6 @@
     },
     {
       "matches": ["https://hangouts.google.com/*"],
-      "js": ["inject/gmail/script/contentscript.js"],
-      "css": ["inject/gmail/style/gmail.css"],
-      "run_at": "document_end",
-      "all_frames": true
-    },
-    {
-      "matches": ["https://tasks.google.com/*"],
       "js": ["inject/gmail/script/contentscript.js"],
       "css": ["inject/gmail/style/gmail.css"],
       "run_at": "document_end",
